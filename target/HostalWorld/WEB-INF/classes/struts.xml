@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="s2" namespace="/" extends="struts-default">
+        <action name="home" class="com.edu.nju.action.ShowHotelsAction">
+            <result name="success">/jsp/home.jsp</result>
+        </action>
+        <action name="room" class="com.edu.nju.action.ShowRoomsAction">
+            <result name="success">/jsp/room.jsp</result>
+        </action>
+        <action name="memberRegister" class="com.edu.nju.action.MemberRegisterAction">
+            <result name="success">/jsp/login.jsp</result>
+            <result name="error">/jsp/message.jsp</result>
+        </action>
+        <action name="hotelRegister" class="com.edu.nju.action.HotelRegisterAction">
+            <result name="success">/jsp/login.jsp</result>
+            <result name="error">/jsp/message.jsp</result>
+        </action>
+        <action name="logout" class="com.edu.nju.action.LogoutAction">
+            <result name="success">/jsp/home.jsp</result>
+        </action>
+        <action name="login" class="com.edu.nju.action.LoginAction">
+            <result name="success">/jsp/home.jsp</result>
+            <result name="error">/jsp/message.jsp</result>
+        </action>
+        <action name="modifyMember" class="com.edu.nju.action.ModifyMemberMessageAction">
+            <result name="success">/jsp/usermessage.jsp</result>
+        </action>
+        <action name="modifyHotel" class="com.edu.nju.action.ModifyHotelMessageAction">
+            <result name="success">/jsp/hotelmessage.jsp</result>
+        </action>
+        <action name="point" class="com.edu.nju.action.PointExchangeAction">
+            <result name="success">/jsp/usermessage.jsp</result>
+            <result name="error">/jsp/message.jsp</result>
+        </action>
+        <action name="recharge" class="com.edu.nju.action.RechargeAction">
+            <result name="success">/jsp/usermessage.jsp</result>
+        </action>
+        <action name="cancelMember" class="com.edu.nju.action.CancelMemberAction">
+            <result name="success">/jsp/usermessage.jsp</result>
+            <result name="error">/jsp/message.jsp</result>
+        </action>
+        <action name="cancelBook" class="com.edu.nju.action.CancelBookAction">
+            <result name="success">/jsp/usermessage.jsp</result>
+        </action>
+        <action name="book" class="com.edu.nju.action.BookAction">
+            <result name="success">/jsp/usermessage.jsp</result>
+            <result name="error">/jsp/message.jsp</result>
+            <result name="login">/jsp/login.jsp</result>
+        </action>
+        <action name="releasePlan" class="com.edu.nju.action.ReleasePlanAction">
+            <result name="success">/jsp/hotelmessage.jsp</result>
+        </action>
+        <action name="addRoom" class="com.edu.nju.action.AddRoomAction">
+            <result name="success">/jsp/room.jsp</result>
+        </action>
+        <action name="checkInit" class="com.edu.nju.action.CheckInitAction">
+            <result name="success">/jsp/hotelcheck.jsp</result>
+        </action>
+        <action name="checkin" class="com.edu.nju.action.CheckinAction">
+            <result name="success">/jsp/hotelmessage.jsp</result>
+        </action>
+        <action name="checkout" class="com.edu.nju.action.CheckoutAction">
+            <result name="success">/jsp/hotelmessage.jsp</result>
+        </action>
+        <action name="review" class="com.edu.nju.action.ReviewAction">
+            <result name="success">/jsp/reviewMessage.jsp</result>
+        </action>
+        <action name="settle" class="com.edu.nju.action.SettleAction">
+            <result name="success">/jsp/reviewMessage.jsp</result>
+        </action>
+        <action name="statisticInit" class="com.edu.nju.action.StatisticInitAction">
+            <result name="success">/jsp/allStatistic.jsp</result>
+        </action>
+    </package>
+</struts>

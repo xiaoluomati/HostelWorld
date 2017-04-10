@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>hotel</short-name>
+    <tag>
+        <name>listHotels</name>
+        <tag-class>com.edu.nju.tags.ListHotelsHandler</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>listRooms</name>
+        <tag-class>com.edu.nju.tags.ListRoomsHandler</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>listPlans</name>
+        <tag-class>com.edu.nju.tags.ListPlansHandler</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>listStatistics</name>
+        <tag-class>com.edu.nju.tags.ListHotelStatisticsHandler</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>

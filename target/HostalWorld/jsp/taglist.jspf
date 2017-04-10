@@ -1,0 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="hotel" uri="/WEB-INF/tlds/HotelMessages.tld" %>
+<%@ taglib prefix="member" uri="/WEB-INF/tlds/MemberStatistics.tld" %>
+<%@ taglib prefix="director" uri="/WEB-INF/tlds/DirectorMessage.tld" %>
+<%@ taglib prefix="cts" tagdir="/WEB-INF/tags" %>
